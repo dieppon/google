@@ -23,7 +23,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 @font-face { font-family: "Catull"; src: url(/font/catull.eot); src: url(/font/catull.eot?#iefix) format('eot'), url(/font/catull.woff) format('woff'), url(/font/catull.ttf) format('truetype'), url(/font/catull.svg) format('svg'); font-weight: 400; font-style: normal; }
 
 /* @end */
-/* General */
+/* @group General */
 html body { font-family: arial, sans-serif; background: #f1f1f1; animation: background 7s ease-out; -moz-animation: background 7s ease-out; /* Firefox */ -webkit-animation: background 7s ease-out; /* Safari and Chrome */ -o-animation: background 7s ease-out; /* Opera */ }
 
 @keyframes background { from { background: #ffffff; }
