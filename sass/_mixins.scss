@@ -1,0 +1,28 @@
+// import all Compass core mixins
+@import "compass";
+
+// import additional Compass plugins
+@import "recipes/shadow";
+
+
+// Selection
+
+@mixin selection($color:inherit, $background:inherit) {
+	$prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
+	@if $color == 'none' {
+		-webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+	}
+	@else {
+		@each $prefix in $prefixes {
+			&::#{$prefix}selection {
+				color: $color;
+				background: $background;
+			}
+		}
+	}
+}

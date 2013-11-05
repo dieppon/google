@@ -1,0 +1,109 @@
+@CHARSET "utf-8";
+/* @group Reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+* { outline: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+input { border: 0; padding: 0; background: none; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* @end */
+/* @group Fonts */
+@font-face { font-family: "Catull"; src: url(/font/catull.eot); src: url(/font/catull.eot?#iefix) format('eot'), url(/font/catull.woff) format('woff'), url(/font/catull.ttf) format('truetype'), url(/font/catull.svg) format('svg'); font-weight: 400; font-style: normal; }
+
+/* @end */
+/* General */
+html body { font-family: arial, sans-serif; background: #f1f1f1; animation: background 7s ease-out; -moz-animation: background 7s ease-out; /* Firefox */ -webkit-animation: background 7s ease-out; /* Safari and Chrome */ -o-animation: background 7s ease-out; /* Opera */ }
+
+@keyframes background { from { background: #ffffff; }
+  to { background: #f1f1f1; } }
+
+@-webkit-keyframes background { /* Safari and Chrome */
+  from { background: #ffffff; }
+  to { background: #f1f1f1; } }
+
+#logo { font-family: Catull,Sans-Serif; margin-top: 15%; margin-bottom: 30px; text-align: center; line-height: normal; font-size: 100px; text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); filter: dropshadow(color=rgba(0, 0, 0, 0.25), offx=0, offy=3); animation: logoShadow 3s ease-out; -moz-animation: logoShadow 3s ease-out; /* Firefox */ -webkit-animation: logoShadow 3s ease-out; /* Safari and Chrome */ -o-animation: logoShadow 3s ease-out; /* Opera */ }
+
+@keyframes logoShadow { from { text-shadow: 0px 3px 3px rgba(0, 0, 0, 0); }
+  to { text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); } }
+
+@-webkit-keyframes logoShadow { /* Safari and Chrome */
+  from { text-shadow: 0px 3px 3px rgba(0, 0, 0, 0); }
+  to { text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); } }
+
+.name { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; position: relative; }
+
+.G { color: #0047F1; }
+.G::-moz-selection { color: #dd172c; background: #0047f1; }
+.G::-webkit-selection { color: #dd172c; background: #0047f1; }
+.G::-o-selection { color: #dd172c; background: #0047f1; }
+.G::-ms-selection { color: #dd172c; background: #0047f1; }
+.G::selection { color: #dd172c; background: #0047f1; }
+
+.o1 { color: #DD172C; }
+.o1::-moz-selection { color: #f9a600; background: #dd172c; }
+.o1::-webkit-selection { color: #f9a600; background: #dd172c; }
+.o1::-o-selection { color: #f9a600; background: #dd172c; }
+.o1::-ms-selection { color: #f9a600; background: #dd172c; }
+.o1::selection { color: #f9a600; background: #dd172c; }
+
+.o2 { color: #F9A600; }
+.o2::-moz-selection { color: #0047f1; background: #f9a600; }
+.o2::-webkit-selection { color: #0047f1; background: #f9a600; }
+.o2::-o-selection { color: #0047f1; background: #f9a600; }
+.o2::-ms-selection { color: #0047f1; background: #f9a600; }
+.o2::selection { color: #0047f1; background: #f9a600; }
+
+.g { color: #0047F1; }
+.g::-moz-selection { color: #00930e; background: #0047f1; }
+.g::-webkit-selection { color: #00930e; background: #0047f1; }
+.g::-o-selection { color: #00930e; background: #0047f1; }
+.g::-ms-selection { color: #00930e; background: #0047f1; }
+.g::selection { color: #00930e; background: #0047f1; }
+
+.l { color: #00930E; }
+.l::-moz-selection { color: #e61b31; background: #00930e; }
+.l::-webkit-selection { color: #e61b31; background: #00930e; }
+.l::-o-selection { color: #e61b31; background: #00930e; }
+.l::-ms-selection { color: #e61b31; background: #00930e; }
+.l::selection { color: #e61b31; background: #00930e; }
+
+.e { color: #E61B31; }
+.e::-moz-selection { color: #0047f1; background: #e61b31; }
+.e::-webkit-selection { color: #0047f1; background: #e61b31; }
+.e::-o-selection { color: #0047f1; background: #e61b31; }
+.e::-ms-selection { color: #0047f1; background: #e61b31; }
+.e::selection { color: #0047f1; background: #e61b31; }
+
+.country { position: absolute; bottom: 0; left: 240px; font-family: arial, sans-serif; color: #777; font-size: 16px; line-height: 1em; line-height: normal; font-weight: bold; text-shadow: none; filter: none; }
+
+form { text-align: center; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-left: auto; margin-right: auto; max-width: 552px; padding-left: 20px; padding-right: 20px; }
+form input { position: relative; box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1); filter: dropshadow(color=rgba(0, 0, 0, 0.1), offx=0, offy=3); background-color: #fff; color: #aaa; font-size: 13px; margin: 0; max-width: 552px; padding: 9px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; animation: inputShadow 3s ease-out; -moz-animation: inputShadow 3s ease-out; /* Firefox */ -webkit-animation: inputShadow 3s ease-out; /* Safari and Chrome */ -o-animation: inputShadow 3s ease-out; /* Opera */ }
+form label { display: block; clear: both; text-align: left; color: #f1f1f1; padding-top: 1em; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; animation: help 5s ease-out; -moz-animation: help 5s ease-out; /* Firefox */ -webkit-animation: help 5s ease-out; /* Safari and Chrome */ -o-animation: help 5s ease-out; /* Opera */ }
+
+@keyframes inputShadow { from { box-shadow: 3px 5px 5px rgba(0, 0, 0, 0); }
+  to { box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1); } }
+
+@-webkit-keyframes inputShadow { /* Safari and Chrome */
+  from { box-shadow: 3px 5px 5px rgba(0, 0, 0, 0); }
+  to { box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1); } }
+
+@keyframes help { from { color: #aaa; }
+  to { color: #f1f1f1; } }
+
+@-webkit-keyframes help { /* Safari and Chrome */
+  from { color: #aaa; }
+  to { color: #f1f1f1; } }
+
+/* @end */
