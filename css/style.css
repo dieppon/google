@@ -20,7 +20,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* @end */
 /* @group Fonts */
-@font-face { font-family: "Catull"; src: url(/font/catull.eot); src: url(/font/catull.eot?#iefix) format('eot'), url(/font/catull.woff) format('woff'), url(/font/catull.ttf) format('truetype'), url(/font/catull.svg) format('svg'); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Catull"; src: url(/google/font/catull.eot); src: url(/google/font/catull.eot?#iefix) format('eot'), url(/google/font/catull.woff) format('woff'), url(/google/font/catull.ttf) format('truetype'), url(/google/font/catull.svg) format('svg'); font-weight: 400; font-style: normal; }
 
 /* @end */
 /* @group General */
