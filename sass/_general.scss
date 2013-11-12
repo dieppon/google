@@ -1,5 +1,6 @@
 /* @group General */
 
+
 html body{
     font-family: arial, sans-serif;
     background: #f1f1f1;
@@ -95,6 +96,26 @@ html body{
     font-weight:bold;
     text-shadow:none;
     filter: none;
+    animation: country 3s ease-out;
+    -moz-animation: country 3s ease-out; /* Firefox */
+    -webkit-animation: country 3s ease-out; /* Safari and Chrome */
+    -o-animation: country 3s ease-out; /* Opera */
+}
+@keyframes country {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes country { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 form {
     text-align: center;

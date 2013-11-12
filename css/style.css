@@ -86,7 +86,14 @@ html body { font-family: arial, sans-serif; background: #f1f1f1; animation: back
 .e::-ms-selection { color: #0047f1; background: #e61b31; }
 .e::selection { color: #0047f1; background: #e61b31; }
 
-.country { position: absolute; bottom: 0; left: 240px; font-family: arial, sans-serif; color: #777; font-size: 16px; line-height: 1em; line-height: normal; font-weight: bold; text-shadow: none; filter: none; }
+.country { position: absolute; bottom: 0; left: 240px; font-family: arial, sans-serif; color: #777; font-size: 16px; line-height: 1em; line-height: normal; font-weight: bold; text-shadow: none; filter: none; animation: country 3s ease-out; -moz-animation: country 3s ease-out; /* Firefox */ -webkit-animation: country 3s ease-out; /* Safari and Chrome */ -o-animation: country 3s ease-out; /* Opera */ }
+
+@keyframes country { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@-webkit-keyframes country { /* Safari and Chrome */
+  from { opacity: 0; }
+  to { opacity: 1; } }
 
 form { text-align: center; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-left: auto; margin-right: auto; max-width: 552px; padding-left: 20px; padding-right: 20px; }
 form input { position: relative; box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1); filter: dropshadow(color=rgba(0, 0, 0, 0.1), offx=0, offy=3); background-color: #fff; color: #aaa; font-size: 13px; margin: 0; max-width: 552px; padding: 9px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; animation: inputShadow 3s ease-out; -moz-animation: inputShadow 3s ease-out; /* Firefox */ -webkit-animation: inputShadow 3s ease-out; /* Safari and Chrome */ -o-animation: inputShadow 3s ease-out; /* Opera */ }
