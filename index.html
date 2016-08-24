@@ -1,41 +1,13 @@
-<!doctype html>
-<html>
-	<head>
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-		<title>Google</title>
-		<link rel="shortcut icon" href="/google/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="/google/touch-icon-iphone.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/google/touch-icon-ipad.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/google/touch-icon-iphone-retina.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/google/touch-icon-ipad-retina.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="width" />
-		<meta name="apple-mobile-web-app-capable" content="no" />
-		<link rel="Stylesheet" href="css/style.css">
-		<script type="text/javascript" type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script type="text/javascript">
-			
-			jQuery(document).ready(function($) {
-				$("input").focus();
+---
+layout: google
+---
 
-				$.get("http://ipinfo.io", function(response) {
-					$(".country").html('\u00A0' + response.country);
-				}, "jsonp");
-
-			});
-
-		</script>
-	</head>
-	<body>
-		<div id="logo">
-			<div class="name">
-				<span class="G">G</span><span class="o1">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span><span class="country">&nbsp;</span>
-			</div>
-		</div>
-		<form method="get" action="https://www.google.co.uk/search">
-			<input type="text" name="q" size="31" value="">
-			<label for="tobeTranslated">Type and press ENTER to search</label>
-		</form>
-	</body>
-</html>
+<div id="logo">
+	<div class="name">
+		<span class="G">G</span><span class="o1">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span><span class="country">&nbsp;</span>
+	</div>
+</div>
+<form method="get" action="https://www.google.co.uk/search">
+	<input type="text" name="q" size="31" value="">
+	<label for="tobeTranslated">Type and press ENTER to search</label>
+</form>
