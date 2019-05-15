@@ -1,0 +1,9 @@
+/* @group Fonts */
+
+// Catull
+@include font-face(Catull, /google/fonts/catull, 400, normal, eot ttf woff svg);
+
+// Product Sans
+@include font-face(Product Sans, /google/fonts/product-sans, 700, normal, woff2 woff ttf eot svg);
+
+/* @end */
