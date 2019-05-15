@@ -20,8 +20,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* @end */
 /* @group Fonts */
-@font-face { font-family: "Catull"; src: url(/google/font/catull.eot); src: url(/google/font/catull.eot?#iefix) format('eot'), url(/google/font/catull.woff) format('woff'), url(/google/font/catull.ttf) format('truetype'), url(/google/font/catull.svg) format('svg'); font-weight: 400; font-style: normal; }
-
+@font-face { font-family: "Catull"; src: url(/google/font/catull.eot); src: url(/google/font/catull.eot?#iefix) format('embedded-opentype'), url(/google/font/catull.woff) format('woff'), url(/google/font/catull.ttf) format('truetype'), url(/google/font/catull.svg) format('svg'); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Product Sans"; src: url(/google/font/product-sans.eot); src: url(/google/font/product-sans.eot?#iefix) format('embedded-opentype'), url(/google/font/product-sans.woff) format('woff'), url(/google/font/product-sans.ttf) format('truetype'), url(/google/font/product-sans.svg) format('svg'); font-weight: 700; font-style: normal; }
 /* @end */
 /* @group General */
 html body { font-family: arial, sans-serif; background: #f1f1f1; animation: background 7s ease-out; -moz-animation: background 7s ease-out; /* Firefox */ -webkit-animation: background 7s ease-out; /* Safari and Chrome */ -o-animation: background 7s ease-out; /* Opera */ }
