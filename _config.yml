@@ -21,7 +21,7 @@ github_username:  dieppon
 markdown: kramdown
 
 #gems
-gems: [github-pages]
+plugins: [github-pages]
 
 #Repo
 repository: dieppon/google.github.io
