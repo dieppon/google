@@ -9,23 +9,7 @@ html body{
     -webkit-animation: background 7s ease-out; /* Safari and Chrome */
     -o-animation: background 7s ease-out; /* Opera */
 }
-@keyframes background {
-    from {
-        background: #ffffff;
-    }
-    to {
-        background: #f1f1f1;
 
-    }
-}
-@-webkit-keyframes background { /* Safari and Chrome */
-    from {
-        background: #ffffff;
-    }
-    to {
-        background: #f1f1f1;
-    }
-}
 #logo{
 	font-family: Catull,Sans-Serif;
     margin-top: 15%;
@@ -39,21 +23,9 @@ html body{
     -moz-animation: logoShadow 3s ease-out; /* Firefox */
     -webkit-animation: logoShadow 3s ease-out; /* Safari and Chrome */
     -o-animation: logoShadow 3s ease-out; /* Opera */
-}
-@keyframes logoShadow {
-    from {
-        text-shadow:0px 3px 3px rgba(0,0,0,0);
-    }
-    to {
-        text-shadow:0px 3px 3px rgba(0,0,0,0.25);
-    }
-}
-@-webkit-keyframes logoShadow { /* Safari and Chrome */
-    from {
-        text-shadow:0px 3px 3px rgba(0,0,0,0);
-    }
-    to {
-        text-shadow:0px 3px 3px rgba(0,0,0,0.25);
+    .product & {
+        font-family: "Product sans",Sans-Serif;
+        font-weight: normal;
     }
 }
 .name{
@@ -83,6 +55,13 @@ html body{
 .e{
     color:#E61B31;
     @include selection(#0047F1, #E61B31);
+
+    .product & {
+        display: inline-block;
+        transform: rotate(-20deg);
+        transform-origin: 50% 60%;
+        animation: eRotate 3s ease-out;
+    }
 }
 .country{
     position: absolute;
@@ -155,38 +134,6 @@ form {
         -moz-animation: help 5s ease-out; /* Firefox */
         -webkit-animation: help 5s ease-out; /* Safari and Chrome */
         -o-animation: help 5s ease-out; /* Opera */
-    }
-}
-@keyframes inputShadow {
-    from {
-        box-shadow:3px 5px 5px rgba(0,0,0,0);
-    }
-    to {
-        box-shadow:3px 5px 5px rgba(0,0,0,0.1);
-    }
-}
-@-webkit-keyframes inputShadow { /* Safari and Chrome */
-    from {
-        box-shadow:3px 5px 5px rgba(0,0,0,0);
-    }
-    to {
-        box-shadow:3px 5px 5px rgba(0,0,0,0.1);
-    }
-}
-@keyframes help {
-    from {
-        color: #aaa;
-    }
-    to {
-        color: #f1f1f1;
-    }
-}
-@-webkit-keyframes help { /* Safari and Chrome */
-    from {
-        color: #aaa;
-    }
-    to {
-        color: #f1f1f1;
     }
 }
 

@@ -1,6 +1,6 @@
-
+// =============================================================================
 // inline-block
-
+// =============================================================================
 @mixin inline-block() {
 	display:-moz-inline-stack;
 	display:inline-block;
@@ -8,9 +8,9 @@
 	*display:inline;
 }
 
+// =============================================================================
 // Selection
-
-
+// =============================================================================
 @mixin selection($color:inherit, $background:inherit) {
 	$prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
 	@if $color == 'none' {
@@ -76,8 +76,9 @@
 	}
 }
 
-/* Clearfix
-  ========================================================================== */
+// =============================================================================
+// Clearfix
+// =============================================================================
 
 @mixin clearfix() {
 	& {
@@ -93,26 +94,24 @@
 	}
 }
 
-/* Box Model
-  ========================================================================== */
-
+// =============================================================================
+// Box Model
+// =============================================================================
 @mixin box-sizing($box-model) {
 	-webkit-box-sizing: $box-model; // Safari <= 5
 	-moz-box-sizing: $box-model; // Firefox <= 19
 	box-sizing: $box-model;
 }
 
-/* Border Radius
-  ========================================================================== */
-
+// =============================================================================
+// Border Radius
+// =============================================================================
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	border-radius: $radius;
 	background-clip: padding-box;  /* stops bg color from leaking outside the border: */
 }
-
 // Single side border-radius
-
 @mixin border-top-radius($radius) {
   	-webkit-border-top-right-radius: $radius;
   	border-top-right-radius: $radius;
