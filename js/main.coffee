@@ -3,7 +3,7 @@
 
 jQuery(document).ready ($) ->
 	$('input').focus()
-	$.get 'http://ipinfo.io', ((response) ->
+	$.get 'https://ipinfo.io?token=83129ddfd413c4', ((response) ->
 
 		if response.country = 'GB'
 			$('.country').html ' UK'
@@ -17,7 +17,7 @@ jQuery(document).ready ($) ->
 		else if response.country = 'ES'
 			$('.country').html ' España'
 			$('form').attr 'action', 'https://www.google.es/search'
-			$('label').html 'Escribe and presiona intro para buscar'
+			$('label').html 'Escribe y presiona intro para buscar'
 
 		else if response.country = 'DE'
 			$('.country').html ' Deutschland'
