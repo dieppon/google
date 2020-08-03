@@ -8,11 +8,16 @@ html body{
     -moz-animation: background 7s ease-out; /* Firefox */
     -webkit-animation: background 7s ease-out; /* Safari and Chrome */
     -o-animation: background 7s ease-out; /* Opera */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 #logo{
 	font-family: Catull,Sans-Serif;
-    margin-top: 15%;
+    margin-top: 20%;
     margin-bottom: 30px;
     text-align:center;
     line-height: normal;
@@ -23,6 +28,11 @@ html body{
     -moz-animation: logoShadow 3s ease-out; /* Firefox */
     -webkit-animation: logoShadow 3s ease-out; /* Safari and Chrome */
     -o-animation: logoShadow 3s ease-out; /* Opera */
+    -webkit-touch-callout: text; /* iOS Safari */
+    -webkit-user-select: text; /* Safari */
+    -moz-user-select: text; /* Old versions of Firefox */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+    user-select: text;
     .product & {
         font-family: "Product sans",Sans-Serif;
         font-weight: normal;
@@ -31,6 +41,12 @@ html body{
 .name{
     @include inline-block;
     position: relative;
+    > span:not(.country) {
+        padding: 0 0 28px 0;
+        .product & {
+            padding: 0;
+        }
+    }
 }
 .G{
     color:#0047F1;
@@ -79,6 +95,19 @@ html body{
     -moz-animation: country 3s ease-out; /* Firefox */
     -webkit-animation: country 3s ease-out; /* Safari and Chrome */
     -o-animation: country 3s ease-out; /* Opera */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    text-shadow: -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px -1px 0 #ffffff;
+    animation: text-shadow 7s ease-out;
+    -moz-animation: text-shadow 7s ease-out; /* Firefox */
+    -webkit-animation: text-shadow 7s ease-out; /* Safari and Chrome */
+    -o-animation: text-shadow 7s ease-out; /* Opera */
+    .product & {
+        left: 245px;
+    }
 }
 @keyframes country {
     from {
@@ -112,10 +141,10 @@ form {
         filter: dropshadow(color=rgba(0,0,0,0.1), offx=0, offy=3); 
         background-color: #fff;
         color: #aaa;
-        font-size: 13px;
+        font-size: 16px;
         margin: 0;
         max-width: 552px;
-        padding: 9px;
+        padding: 16px;
         width: 100%;
         @include box-sizing(border-box);
         animation: inputShadow 3s ease-out;
